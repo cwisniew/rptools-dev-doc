@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmaptool_dev_doc=self.webpackChunkmaptool_dev_doc||[]).push([[535],{45641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Player Databases","permalink":"/blog/player-databases"},{"title":"Speech and Thought Bubbles","permalink":"/blog/token-speech-bubbles"}]}')}}]);

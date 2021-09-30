@@ -4,13 +4,20 @@
         <title>My RPTools Developer Ramblings... Blog</title>
         <link>https://rptools-doc.craigs-stuff.net/blog</link>
         <description>My RPTools Developer Ramblings... Blog</description>
-        <lastBuildDate>Wed, 29 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[Player Databases]]></title>
+            <link>https://rptools-doc.craigs-stuff.net/blog/player-databases</link>
+            <guid>player-databases</guid>
+            <pubDate>Thu, 30 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Authentication types]]></description>
+        </item>
+        <item>
             <title><![CDATA[Speech and Thought Bubbles]]></title>
-            <link>https://rptools-doc.craigs-stuff.net/blog/Token-Speech-Bubbles</link>
-            <guid>Token-Speech-Bubbles</guid>
+            <link>https://rptools-doc.craigs-stuff.net/blog/token-speech-bubbles</link>
+            <guid>token-speech-bubbles</guid>
             <pubDate>Wed, 29 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Callouts]]></description>
         </item>
