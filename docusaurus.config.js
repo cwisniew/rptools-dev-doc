@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'My RPTools Developer Ramblings...',
   tagline: 'Hopefully useful for someone',
-  url: 'https://rptools-dev-doc.netlify.com',
+  url: 'https://rptools-dev-doc.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
