@@ -17,8 +17,6 @@ jobs:
           node-version: '12.x'
       - name: Test Build
         run: |
-          mkdir -p build
-          echo $PAGES_CNAME > build/CNAME
           if [ -e yarn.lock ]; then
             yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
@@ -43,8 +41,6 @@ jobs:
           USE_SSH: true
           GIT_USER: git
         run: |
-          mkdir -p build
-          echo $PAGES_CNAME > build/CNAME
           git config --global user.email "craig.wisniewski@gmail.com"
           git config --global user.name "cwisniew"
           if [ -e yarn.lock ]; then
