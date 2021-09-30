@@ -37,7 +37,7 @@ If the player is not blocked and is authenticating with a public key then the fo
 ```
 
 ## Player using shared password authentication
-If the player is not blocked and is authentiating with a shared password the following authentication/handsake squence occurs. As a shared password could be per player or role based (i.e. a single password for players and another single password for GMs) the server creates a challenge for both GM and Player and which ever the client can respond to determines the role. If a password database is used where the role is recorded and the Server knows if the player is a GM or not then a new random password will be used to encrypt the non pertinant handshake challenge ensureing it could never match.
+If the player is not blocked and is authentiating with a shared password the following authentication/handsake squence occurs. As a shared password could be per player or role based (i.e. a single password for players and another single password for GMs) the server creates a challenge for both GM and Player and which ever the client can respond to determines the role. If a password database is used where the role is recorded and the Server knows if the player is a GM or not then a new random password will be used to encrypt the non pertinant handshake challenge ensureing it should never match.
 
 ```mermaid
 
