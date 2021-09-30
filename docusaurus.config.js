@@ -57,7 +57,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/cwisniew/docusaurus',
+            href: 'https://github.com/cwisniew/rptools-dev-doc',
             label: 'GitHub',
             position: 'right',
           },
