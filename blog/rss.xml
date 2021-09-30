@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>My RPTools Developer Ramblings... Blog</title>
+        <link>https://rptools-doc.craigs-stuff.net/blog</link>
+        <description>My RPTools Developer Ramblings... Blog</description>
+        <lastBuildDate>Wed, 29 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Speech and Thought Bubbles]]></title>
+            <link>https://rptools-doc.craigs-stuff.net/blog/Token-Speech-Bubbles</link>
+            <guid>Token-Speech-Bubbles</guid>
+            <pubDate>Wed, 29 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Callouts]]></description>
+        </item>
+    </channel>
+</rss>
