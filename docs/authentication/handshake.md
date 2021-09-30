@@ -59,3 +59,9 @@ note right of Server: challenge_response = Encrypted HandshakeChallenge.response
 Server->>Server: Compare client challenge response to<br/>preencrypted challenge response on server<br/>side to determine which password was used
 Server->>Client: Send ConnectionSuccessfulMsg
 ```
+
+
+## Protocal Buffers
+```protobuf reference title="Handshake Protocal Buffers"
+https://github.com/RPTools/maptool/blob/develop/src/main/proto/handshake.proto
+``` 
