@@ -70,7 +70,7 @@ Mage and Familiar with Speech Name, mouse over Familiar
 
 
 ## Determining which name is displayed
- In general when deciding which name to use in speech and thought bubbles MapTool will attempt to show the name associated with the following precendce 
+ In general when deciding which name to use in speech and thought bubbles MapTool will attempt to show the name associated with the following precedence 
 
  1. Token under the mouse with speech name(if player owns it or is GM)
  2. Impersonated Token with speech name
