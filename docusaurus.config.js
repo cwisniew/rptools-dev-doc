@@ -21,14 +21,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [require('mdx-mermaid')],
           // Please change this to your repo.
-          editUrl: 'https://github.com/cwisniew/rptools-dev-doc/edit/main/website/',
+          editUrl: 'https://github.com/cwisniew/rptools-dev-doc/edit/main/',
         },
         blog: {
           showReadingTime: true,
+          remarkPlugins: [require('mdx-mermaid')],
           // Please change this to your repo.
           editUrl:
-            'https://github.com/cwisniew/rptools-dev-doc/edit/main/website/blog/',
+            'https://github.com/cwisniew/rptools-dev-doc/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
