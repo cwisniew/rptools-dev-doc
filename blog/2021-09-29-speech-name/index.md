@@ -1,5 +1,5 @@
 ---
-slug: Token-Speech-Bubbles
+slug: token-speech-bubbles
 title: Speech and Thought Bubbles
 authors: [craigw]
 tags: [MapTool, speech-bubble, MapTool 1.10]
