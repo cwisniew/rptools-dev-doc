@@ -110,7 +110,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Craig Wisniewski, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Craig Wisniewski. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
