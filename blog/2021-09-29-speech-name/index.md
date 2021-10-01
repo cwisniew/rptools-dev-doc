@@ -41,9 +41,9 @@ Or via macro.<br/>
 
 ## Related Macros
 There are two related macros
-```getSpeechName()``` which returns the speech name for the current token. There is also a trusted variant ```getSpeechName(tokenId)``` which will return the speach name for the token with the specified id.
+```getSpeechName()``` which returns the speech name for the current token. There is also a trusted variant ```getSpeechName(tokenId)``` which will return the speech name for the token with the specified id.
 
-```setSpeechName(SpeechBubblName)``` sets the speech name for the current token. There is also a trusted variant ```setSpeechName(SpeechBubbleName, tokenId)``` which will set the speach name for the token with the specified id.
+```setSpeechName(SpeechBubbleName)``` sets the speech name for the current token. There is also a trusted variant ```setSpeechName(SpeechBubbleName, tokenId)``` which will set the speech name for the token with the specified id.
 
 
 ## Examples
@@ -93,7 +93,7 @@ flowchart TD;
  impersonatedHasSpeech --> |No| playerName
 ```
 
-If there are multiple tokens under the mouse (e.g. a Token Stack) and at least one has a speech name then the follwing logic will be used to determine which is used.
+If there are multiple tokens under the mouse (e.g. a Token Stack) and at least one has a speech name then the following logic will be used to determine which is used.
 
 ```mermaid
 flowchart TD;

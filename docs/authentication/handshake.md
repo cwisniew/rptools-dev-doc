@@ -2,7 +2,7 @@
 # Handshake and Authentication
 Last Updated: MapTool 1.10
 
-The handshake and authentication occurs via protobuf messages before any Hessian serialization occurs. Once the handshake and authentication is succcessful only then will Hessian serialization be used for passing messages between server and client. (This is likely to change in MapTool 1.11 or MapTool 1.12 where Hessian will be completely replaced by protobuf)
+The handshake and authentication occurs via protocol buffers messages before any Hessian serialization occurs. Once the handshake and authentication is successful only then will Hessian serialization be used for passing messages between server and client. (This is likely to change in MapTool 1.11 or MapTool 1.12 where Hessian will be completely replaced by protocol buffers)
 
 ## Blocked Player
 If a player is blocked then the Server will inform the client of this before trying perform any password or public key authentication.
@@ -18,7 +18,9 @@ If a player is blocked then the Server will inform the client of this before try
 ```
 
 ## Player using public key authentication
-If the player is not blocked and is authenticating with a public key then the following authentication/handshake sequence occurs. The public key has to be known to the Server before a player can attempt to authenticat this way.
+If the player is not blocked and is authenticating with a public key then the following authentication/handshake sequence occurs. The public key has to be known to the Server before a player can attempt to authenticate this way.
+
+The public key is never sent from client to server via MapTool so the server must know of the public key before hand. The server then encrypts the handshake challenge using the public key which the client will only be able to decrypt if it has access to the matching private key, once decrypted the client sends back the handshake challenge in plaintext as it needs to do no more to show it has the correct private key.
 
 ```mermaid
 
@@ -32,12 +34,14 @@ If the player is not blocked and is authenticating with a public key then the fo
     Note right of Server: auth_type = ASYMMETRIC_KEY<br/> challenge[0] = HandshakeChallenge.challenge
     Client->>Client: Decrypt Handshake Challenge
     Client->>Server: Send ClientAuthMsg
-    Note left of Client:(not encrypted)<br/>challenge_response = HanshakeChallenge.response
+    Note left of Client:(not encrypted)<br/>challenge_response = HandshakeChallenge.response
     Server->>Client: Send ConnectionSuccessfulMsg
 ```
 
 ## Player using shared password authentication
-If the player is not blocked and is authentiating with a shared password the following authentication/handsake squence occurs. As a shared password could be per player or role based (i.e. a single password for players and another single password for GMs) the server creates a challenge for both GM and Player and which ever the client can respond to determines the role. If a password database is used where the role is recorded and the Server knows if the player is a GM or not then a new random password will be used to encrypt the non pertinant handshake challenge ensureing it should never match.
+If the player is not blocked and is authenticating with a shared password the following authentication/handshake sequence occurs. As a shared password could be per player or role based (i.e. a single password for players and another single password for GMs) the server creates a challenge for both GM and Player and which ever the client can respond to determines the role. If a password database is used where the role is recorded and the Server knows if the player is a GM or not then a new random password will be used to encrypt the non pertinent handshake challenge ensuring it should never match.
+
+Password information is never sent between the client and the server instead it is used on both sides to encrypt/decrypt the handshake challenge.
 
 ```mermaid
 
@@ -56,12 +60,12 @@ Client->>Client: Try decrypt both challenges
 Client->>Client: Encrypt HandshakeChallenge.response
 Client->>Server: Send ClientAuthMsg
 note right of Server: challenge_response = Encrypted HandshakeChallenge.response
-Server->>Server: Compare client challenge response to<br/>preencrypted challenge response on server<br/>side to determine which password was used
+Server->>Server: Compare client challenge response to<br/>pre-encrypted challenge response on server<br/>side to determine which password was used
 Server->>Client: Send ConnectionSuccessfulMsg
 ```
 
 
-## Protocal Buffers
-```protobuf reference title="Handshake Protocal Buffers"
+## Protocol Buffers
+```protobuf reference title="Handshake Protocol Buffers"
 https://github.com/RPTools/maptool/blob/develop/src/main/proto/handshake.proto
 ``` 
