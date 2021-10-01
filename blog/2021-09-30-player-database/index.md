@@ -19,6 +19,15 @@ For player specific passwords and public keys authentication a password file mus
 
 This will load the password file or create a new one if it doesn't exist.
 
+
+## Clients Connecting With Public Keys
+So that the user does not have to type in a password that will not be used they can check "connect using public Key" from the connect to server dialog.
+
+![Connect To Sever Dialog](./connect-using-public-key.png)
+
+They do not have to check this box as if the server requests the client attempts to authenticates via public key the client will do so even if the user has specified a password. If this value is checked the only way the client can authenticate is via public key so any password in the password text field will be ignored. 
+
+
 ## Adding, Editing, or Removing Players
 The menu option to edit player passwords is under the file menu.
 ![Player Database Menu Option](./player-database-menu.png)
