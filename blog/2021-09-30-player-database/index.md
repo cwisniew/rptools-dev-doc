@@ -34,7 +34,7 @@ The menu option to edit player passwords is under the file menu.
 
 This opens the player database dialog which can be used to add, edit, and remove players. This dialog shows the following information
 
-### Player Daabase
+### Player Database
 ![Edit Player Dialog](./player-database.png)
 * Player name
 * Role, Player or GM
@@ -42,7 +42,9 @@ This opens the player database dialog which can be used to add, edit, and remove
 * Is the player Blocked
 Blocked players will not be able to log in. When they try to connect they will get a message with a reason that they are blocked.
 
-Note: New, Added, or Modifications to players take effect immediately but the changes will not be written to the password file until this dialog is closed (either with Ok button or dialog close button). This is so that the file will not be continually overwritten many times when making several changes at once.
+:::note
+New, Added, or Modifications to players take effect immediately but the changes will not be written to the password file until this dialog is closed (either with Ok button or dialog close button). This is so that the file will not be continually overwritten many times when making several changes at once.
+:::
 
 
 ### Adding or Editing Player
@@ -62,8 +64,9 @@ Its recommended that if you want to use player specific authentication you use p
 
 If you still prefer to use a password over a public key it is **strongly** recommended you use the Generate New Password button so that no one is sharing passwords they may be using elsewhere.
 
-Note: Setting a plyer to blocked will not kick the player, it will only stop them from attempting to connect to the server. You will need to kick the player if you also want to remove them immediately. At this time kicking a blocked player will not send them the reason that they are blocked/kicked but will do so in a future version.
-
+:::note
+Setting a plyer to blocked will not kick the player, it will only stop them from attempting to connect to the server. You will need to kick the player if you also want to remove them immediately. At this time kicking a blocked player will not send them the reason that they are blocked/kicked but will do so in a future version.
+:::
 
 ## Obtaining The Players Public Key
 There is a new Authentication tab on the preferences dialog which contains the public key for your client. If you have multiple machines each will have its a different public key, its also possible if you have multiple versions installed with different data directories then these may also have different public keys.
