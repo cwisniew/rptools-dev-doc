@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rptools-doc.craigs-stuff.net/blog</id>
     <title>My RPTools Developer Ramblings... Blog</title>
-    <updated>2021-09-30T00:00:00.000Z</updated>
+    <updated>2021-10-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rptools-doc.craigs-stuff.net/blog"/>
     <subtitle>My RPTools Developer Ramblings... Blog</subtitle>
     <icon>https://rptools-doc.craigs-stuff.net/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Lib:Tokens URI access]]></title>
+        <id>Lib:Tokens URI access</id>
+        <link href="https://rptools-doc.craigs-stuff.net/blog/2021/10/02/lib-token-uri"/>
+        <updated>2021-10-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Issues with HTML/CSS/JavaScript Prior to MapTool 1.10]]></summary>
+        <author>
+            <name>Craig Wisniewski</name>
+            <uri>https://github.com/cwisniew</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Player Databases]]></title>
         <id>player-databases</id>

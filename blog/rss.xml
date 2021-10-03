@@ -4,9 +4,16 @@
         <title>My RPTools Developer Ramblings... Blog</title>
         <link>https://rptools-doc.craigs-stuff.net/blog</link>
         <description>My RPTools Developer Ramblings... Blog</description>
-        <lastBuildDate>Thu, 30 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Lib:Tokens URI access]]></title>
+            <link>https://rptools-doc.craigs-stuff.net/blog/2021/10/02/lib-token-uri</link>
+            <guid>Lib:Tokens URI access</guid>
+            <pubDate>Sat, 02 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Issues with HTML/CSS/JavaScript Prior to MapTool 1.10]]></description>
+        </item>
         <item>
             <title><![CDATA[Player Databases]]></title>
             <link>https://rptools-doc.craigs-stuff.net/blog/player-databases</link>
