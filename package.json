@@ -27,6 +27,8 @@
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "rehype-truncate": "^1.2.2",
+    "remark-images": "^3.0.0",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
