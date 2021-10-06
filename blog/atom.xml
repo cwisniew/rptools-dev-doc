@@ -9,8 +9,8 @@
     <icon>https://rptools-doc.craigs-stuff.net/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Lib:Tokens URI access]]></title>
-        <id>Lib:Tokens URI access</id>
-        <link href="https://rptools-doc.craigs-stuff.net/blog/2021/10/02/lib-token-uri"/>
+        <id>lib-token-uri</id>
+        <link href="https://rptools-doc.craigs-stuff.net/blog/lib-token-uri"/>
         <updated>2021-10-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Issues with HTML/CSS/JavaScript Prior to MapTool 1.10]]></summary>
         <author>

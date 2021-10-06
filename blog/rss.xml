@@ -9,8 +9,8 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Lib:Tokens URI access]]></title>
-            <link>https://rptools-doc.craigs-stuff.net/blog/2021/10/02/lib-token-uri</link>
-            <guid>Lib:Tokens URI access</guid>
+            <link>https://rptools-doc.craigs-stuff.net/blog/lib-token-uri</link>
+            <guid>lib-token-uri</guid>
             <pubDate>Sat, 02 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Issues with HTML/CSS/JavaScript Prior to MapTool 1.10]]></description>
         </item>
