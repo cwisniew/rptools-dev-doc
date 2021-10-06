@@ -24,11 +24,11 @@ interface RoadMapEntryProps {
 }
 
 export const RoadMapEntry: FunctionComponent<RoadMapEntryProps> = ({ summary, blogPost, docPage, github, children, completed }) => (
-    <div className="roadmap-entry">
+    <div className="road-map-entry">
         <details>
             <summary>{summary} {completed && '✅'}</summary>
             <GitHubLink {...github} />
-            <div className="roadmap-entry-description">{children}</div>
+            <div className="road-map-entry-description">{children}</div>
             {blogPost && <BlogPostLink {...blogPost} />}
             {docPage &&  <DocPageLink {...docPage} />}
         </details>

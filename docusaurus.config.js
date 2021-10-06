@@ -58,6 +58,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/road-map/maptool', label: 'MapTool Road Map', position: 'left'},
           {
             href: 'https://github.com/cwisniew/rptools-dev-doc',
             label: 'GitHub',

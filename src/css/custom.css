@@ -37,22 +37,22 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   display: inline;
 }
 
-.roadmap-entry-description {
+.road-map-entry-description {
   padding: 10px;
 }
 
-.roadmap-entry {
+.road-map-entry {
   background-color: #10AAA0;
   border-radius: 25px;
   padding: 20px;
   margin: 20px;
 }
 
-.roadmap-entry a:link {
+.road-map-entry a:link {
   color:palegreen
 }
 
 
-.roadmap-entry a:visited {
+.road-map-entry a:visited {
   color:rgb(153, 252, 153)
 }

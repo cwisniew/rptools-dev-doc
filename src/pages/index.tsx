@@ -27,6 +27,13 @@ function HomepageHeader() {
             Development Blog
           </Link>
         </div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/road-map/maptool">
+              MapTool Road Map
+          </Link>
+        </div>
       </div>
     </header>
   );
