@@ -134,6 +134,42 @@ These are
 
 The optional "options" argument contains the same arguments and format as the frame/dialog/overlay [roll options](https://wiki.rptools.info/index.php/frame5_%28roll_option%29)
 
+### Relative paths
+When using the following functions
+- `html.dialog5(<dialog name>, <libURI>, [<options>])`
+- `html.frame5(<frame name>, <libURI>, [<options>])`
+- `html.overlay(<overlay name>, <libURI>, [<options>])`
+
+The URLs in the HTML file can also be specified using relative paths, for example
+Given 
+
+![Relative paths macros](./relative-path-macros.png)
+
+If the HTML is loaded from `test/test.html` you can use relative paths for the other macros as below
+
+```html
+<html>
+<head>
+	<link rel="stylesheet" href="./test.css?cachelib=false">
+</head>
+<body>
+	<h1>This is a test</h1>
+	<div id='test1'/>
+	<script>
+		document.getElementById('test1').innerHTML = '...This is a test!';
+	</script>
+	<script src="./test.js?cachelib=false"></script>
+	<img src="asset://87f4e9bfa4f1f3db250b57b3599fa4e9"/>
+	<a href="./test2.html">test2</a>
+</body>
+```
+
+This will even work for hyperlink navigation as seen in the link to `./test2.htlm` aboove
+
+![Relative Path Navigation Example](./relative-path-example.gif)
+
+
+
 #### Running JavaScript from a lib:// URI
 
 In addition to being able to include JavaScript in HTML via the `<script>` tag, lib:// URIs can be used to execute JavaScript via the `js.evalUI()`macro function.
