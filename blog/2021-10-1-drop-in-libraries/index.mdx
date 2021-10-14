@@ -1,0 +1,69 @@
+---
+slug: drop-in-libraries
+title: MapTool Drop In Libraries
+authors: [craigw]
+tags: [MapTool, MapTool 1.10, Libraries]
+---
+
+# Drop In Libraries
+MapTool 1.11 introduces drop in libraries which are intended to be an easier
+to work with replacement for Lib:Tokens while also offering a lot more functionality.
+Lib:Tokens will still function the way that they currently do in MapTool 1.11 and future 
+versions but will not be getting a lot of the new features that drop in libraries will have,
+so it is recommended that framework developers transition to drop in libraries if supporting 
+MapTool 1.11 and above.
+
+
+## Format of drop in library files
+Drop in libraries can be shared in a .mtlib file. This file is a zip file with a specific
+structure and content.
+
+```
+library.json            <-- Configuration information for the drop in library
+content/                <-- Content of the library
+content/public          <-- Content of the library acessable via `lib:// URI`
+content/mtscript        <-- MTSCript files
+content/mtscript/public <-- MTSCript files that can be called via `[macro(): ]`
+```
+
+* content/public is only exposed via lib:// URI if `allowsUriAccess` is set (see configuration file)
+* MTScript macros must all end with the file extension .mts to be recognised.
+* Only MTScript files in `content/mtscript/public` can be called using `[macro():]`
+
+## format of the configuration file
+The library.json configuration file is a json file with the following structure.
+```json
+{
+  "name": "test-library",
+  "version": "1.0.0",
+  "website": "www.rptools.net",
+  "githubUrl": "github.com/RPTools/test-library",
+  "authors": [ "RPTools Team" ],
+  "license": "GPL 3.0",
+  "namespace": "net.rptools.maptool.test-library",
+  "description": "My new test library for stuff",
+  "shortDescription": "test library",
+  "allowsUriAccess": true,
+  "actions": {
+    "init": [ 
+      "mtscript/init.mts",
+      "myscripts/init.js"
+    ]
+  }
+}
+```
+* Scripts in the action field must be JavaScript with extension .js or MTScript in the content/mtscripts
+directory and have the extension .mts. For each of the scripts listed in the array for an action they are
+run in the order listed.
+  * init run when the library is first loaded.
+  * campaingLoad run when the campign is loaded (similar to exisiting onCampaignLoad)
+  * playerConnected run when a player connects (server only)
+  * playerDisconnected run when a player disconnects (server only)
+
+
+## MTScript macros
+The name of the fie becomes that macroname for `[macro(): ]` the namespace of the drop in library
+is used for the `@` portion.  For example:
+
+`[macro("mtscript1@net.rptools.maptool.test-library")]` executes MTScript macro in the file 
+`content/mtscript/public/mtscript1.mts`
