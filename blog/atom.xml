@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rptools-doc.craigs-stuff.net/blog</id>
     <title>My RPTools Developer Ramblings... Blog</title>
-    <updated>2021-10-19T00:00:00.000Z</updated>
+    <updated>2021-11-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rptools-doc.craigs-stuff.net/blog"/>
     <subtitle>My RPTools Developer Ramblings... Blog</subtitle>
@@ -11,6 +11,17 @@
         <title type="html"><![CDATA[MapTool Add-On Libraries]]></title>
         <id>add-on-libraries</id>
         <link href="https://rptools-doc.craigs-stuff.net/blog/add-on-libraries"/>
+        <updated>2021-11-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This post describes a work in progress so details may change due to feedback. This is also]]></summary>
+        <author>
+            <name>Craig Wisniewski</name>
+            <uri>https://github.com/cwisniew</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MapTool Add-On Libraries (Old)]]></title>
+        <id>add-on-libraries-old</id>
+        <link href="https://rptools-doc.craigs-stuff.net/blog/add-on-libraries-old"/>
         <updated>2021-10-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Note: This post describes a work in progress so details may change due to feedback. This is also]]></summary>
         <author>
