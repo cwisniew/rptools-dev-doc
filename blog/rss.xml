@@ -4,9 +4,16 @@
         <title>My RPTools Developer Ramblings... Blog</title>
         <link>https://rptools-doc.craigs-stuff.net/blog</link>
         <description>My RPTools Developer Ramblings... Blog</description>
-        <lastBuildDate>Sun, 07 Nov 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Nov 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[MapTool Add-On Libraries and Static Data]]></title>
+            <link>https://rptools-doc.craigs-stuff.net/blog/add-on-libraries-static-data</link>
+            <guid>add-on-libraries-static-data</guid>
+            <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post describes a work in progress so details may change due to feedback. This is also]]></description>
+        </item>
         <item>
             <title><![CDATA[MapTool Add-On Libraries]]></title>
             <link>https://rptools-doc.craigs-stuff.net/blog/add-on-libraries</link>
