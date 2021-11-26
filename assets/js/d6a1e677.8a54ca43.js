@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmaptool_dev_doc=self.webpackChunkmaptool_dev_doc||[]).push([[112],{62973:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/speech-bubble","name":"speech-bubble","count":1,"permalink":"/blog/tags/speech-bubble"}')}}]);
